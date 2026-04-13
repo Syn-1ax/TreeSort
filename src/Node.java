@@ -39,7 +39,7 @@ public class Node {
         return list;
     }
 
-    // Adds stuff to list
+    // Adds stuff to list Recursively.
     private void TreeWalk(ArrayList<Integer> list){ 
         // Go Left
         if (Left != null){
