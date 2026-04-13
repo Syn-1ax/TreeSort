@@ -1,5 +1,9 @@
+
 import java.util.ArrayList;
 public class TreeSort {
+
+    public static void main(String[] args){
+    }
 
     // Sort Using Tree Sort
     public static ArrayList<Integer> sort(ArrayList<Integer> x){
@@ -14,8 +18,5 @@ public class TreeSort {
 
         // Walk and return the tree list, but now sorted.
         return root.walk();
-    }
-    public static void main(String[] args){
-        
     }
 }
