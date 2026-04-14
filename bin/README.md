@@ -70,4 +70,5 @@ For the gitlog file, you can find them in the /docs, however, the relevant log i
 
 ![ViewGitLog](docs/gitlog.txt)
 
-If you cant access this, go to "docs/gitlog.txt" of this repository
+If you cant access this, go to "docs/gitlog.txt" of this repository.\
+Both Methods done just in case any internet problems occur.
