@@ -1,9 +1,4 @@
-package src;
-import TreeSort;
-import Node;
-
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 // This Version of The File Is Used For if you want to input the numbers manually
@@ -17,16 +12,16 @@ public class MainUSERINPUT {
 
 
     System.out.print("Amount of Numbers In List? ");
-    int n = scanner.nextInt();
+    int n = UserInput.nextInt();
 
     System.out.println("Enter " + n + " Numbers:");
     for (int i = 0; i < n; i++){
-        System.out.print("Number " + i + ":");
-        List.add(scanner.nextInt());
+        System.out.print("Number " + (i + 1)+ ":");
+        List.add(UserInput.nextInt());
     }
 
     System.out.println("Unsorted List: " + List);
     System.out.println("Sorted List: " + TreeSort.sort(List));
-    scanner.close();
+    UserInput.close();
     }
 }
