@@ -1,6 +1,13 @@
-## 
+## Treesort Project | Two Mains
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+# Quick Overview:
+
+This Project's task was to create a TreeSorting Algorithm, which would be able to sort An Array/List into Numerical Order.
+
+For instance:
+
+Unsorted List = [10,5,8,3,1,5]
+Sorted List = [1,3,5,5,8,10]
 
 ## Folder Structure
 
