@@ -1,6 +1,6 @@
-## Treesort Project | Two Mains
+# Treesort Project | Two Mains
 
-# Quick Overview:
+## Quick Overview:
 
 This Project's task was to create a TreeSorting Algorithm, which would be able to sort An Array/List into Numerical Order.
 
@@ -8,6 +8,8 @@ For instance:
 
 Unsorted List = [10,5,8,3,1,5]
 Sorted List = [1,3,5,5,8,10]
+
+In Essence, the TreeSort algorithm will sort Elements into Order, usually Ascending, through starting at a Root Node (The Beginning Node), then comparing its numerical Value to the Child Nodes, if the Child is Greater than its Parent Node, it'll swap those values, then
 
 ## Folder Structure
 
