@@ -24,7 +24,6 @@ public class MainUSERINPUT {
             validarray = true;
         }
     
-
     // Simple validity check, if not validarray, will not proceed, and will end
     if (!validarray){
         System.out.println("ARRAY ERROR: Must Be Whole Number's Above 0 ONLY.");

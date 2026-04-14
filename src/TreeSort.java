@@ -18,6 +18,7 @@ public class TreeSort {
         }
 
         // Walk and return the tree list, but now sorted.
+        // This part doesnt have a 0 notify case, however, this is sorted in the MainUSERINPUT file, and also because you cant sort a Zero List, it shouldnt do much but cause an error and close
         return root.walk();
     }
 }

@@ -1,5 +1,6 @@
 // Nodes being the point where the numbers are
 import java.util.ArrayList;
+
 public class Node {
     // Attributes Being Held:
     int ArrayData;
@@ -39,6 +40,7 @@ public class Node {
     }
 
     // Adds stuff to list Recursively
+    // Private because you dont want anyone calling this on accident.
     private void TreeWalk(ArrayList<Integer> list){ 
         // Go Left
         if (Left != null){
