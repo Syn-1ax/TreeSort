@@ -16,7 +16,8 @@ public class TreeSortTEST{
         // Testing the Testing ArrayList<Integer>
         ArrayList<Integer> Given = new ArrayList<>(Arrays.asList(10,5,8,3,1,5));
         ArrayList<Integer> Desired = new ArrayList<>(Arrays.asList(1, 3, 5, 5, 8, 10));
-
+ 
+        System.out.println("Sorted List:" + TreeSort.sort(Given));
         assertEquals(Desired, TreeSort.sort(Given));
     }
 }
