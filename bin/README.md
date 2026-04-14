@@ -6,33 +6,68 @@ This Project's task was to create a TreeSorting Algorithm, which would be able t
 
 For instance:
 
-Unsorted List = [10,5,8,3,1,5]
+Unsorted List = [10,5,8,3,1,5] \
 Sorted List = [1,3,5,5,8,10]
 
 In Essence, the TreeSort algorithm will sort Elements into Ascending Order.
 It does this through creating a binary tree, and establishing a Root Node (First element of the list). Each following number then travels down the tree, at every node it passes, if the value is less than the current node, it goes left, if it is equal to or greater than the current, then it goes right. This continues until the number finds an empty spot and is inserted there.
 
-Once all numbers have been inserted, the tree is walked in-order, left subtree first, then the current node, then the right subtree. Leaving us with, once it walk's through the list, starting with the Left Side, and them going to the Right, we get our list back in ascending order.
+Once all numbers have been inserted, the tree is walked in-order, left subtree first, then the current node, then the right subtree. Leaving us with, once it walks through the list (going through the tree), starting with the Left Side, and them going to the Right, we get our list back in ascending order.
 
 
 
 ## A Diagram (Provided By Dr Thomas Bending)
 
-[GRAPH EXAMPLE HERE]
+![TreesortGraphExample](docs/0.png)
+
+## How To Use:
+
+Once you download this entire repository as a .zip file (Or download the source code zip from the release page), and, using something like VSCode, Run Either MainUSERINPUT or just Main.
+
+Running MainUSERINPUT will provide you with a way to manually input each and every element yourselves.
+
+Running Main requires you to edit the "Arrays.asList(4,2,3,5,1)" section, where the values within the asList() part is what must be changed.
+
+I provided both on purpose, if you have a list that you would like to copy and paste, use the regular "Main" script, if you want to manually input each value on the fly (as if you where just inputting random elements, only suitable for shorter arrays if you value your time), you will use "MainUSERINPUT" instead.
+
+
+## Programme Testing Proof:
+The part that show's that the code does work.
+I used JUNIT for this.
+
+![WhatITested](docs/1.png)
+
+![WhatITestedWith](docs/2.png)
+
+
+### //// JUnit Test Results ////
+%TESTC  1 v2
+%TSTTREE2,TreeSortTEST,true,1,false,1,TreeSortTEST,,[engine:junit-jupiter]/[class:TreeSortTEST]
+%TSTTREE3,TestSort(TreeSortTEST),false,1,false,2,TestSort(),,[engine:junit-jupiter]/[class:TreeSortTEST]/[method:TestSort()]
+%TESTS  3,TestSort(TreeSortTEST)
+
+%TESTE  3,TestSort(TreeSortTEST)
+
+%RUNTIME109
+
+![TestOutputIMG](docs/3.png)
+
+### //// END OF TEST ////
+
+THERE IS NO %FAILED Present, the Sorted Given Array is the same as our Desired Array (Our unsorted, when sorted, is the same as our sorted known array) \
+This result throws no errors, this test therefore, tells us that this should work correctly when sorting Arrays into Ascending Order.
+
+### J-UNIT Doc Sources:
+https://junit.org/junit5/docs/current/user-guide/
+https://junit.org/junit5/docs/current/api/org.junit.jupiter.api/org/junit/jupiter/api/Assertions.html
 
 
 
-## Folder Structure
+## GIT Log:
 
-The workspace contains two folders by default, where:
+For the gitlog file, you can find them in the /docs, however, the relevant log is shown below as well for clarity. \
+(git log --all --oneline --graph > gitlog.txt) <--- Used To Generate Logs.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+![ViewGitLog](docs/gitlog.txt)
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+If you cant access this, go to "docs/gitlog.txt" of this repository

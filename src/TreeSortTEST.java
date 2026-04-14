@@ -1,9 +1,3 @@
-// CHANGE THIS TO THE README SOURCES
-// https://junit.org/junit5/docs/current/user-guide/
-// https://junit.org/junit5/docs/current/api/org.junit.jupiter.api/org/junit/jupiter/api/Assertions.html
-
-
-
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import java.util.ArrayList;
@@ -20,12 +14,12 @@ public class TreeSortTEST{
         ArrayList<Integer> Result = TreeSort.sort(Given);
 
         // Print Result:
-        System.out.println("Given Array: " + Given);
-        System.out.println("Desired Output: " + Desired);
-        System.out.println("TreeSorter Output: " + Result); // This is the output by the sorter.
+        //System.out.println("Given Array: " + Given);
+        //System.out.println("Desired Output: " + Desired);
+        //System.out.println("TreeSorter Output: " + Result); // This is the output by the sorter.
 
         // JUNIT Test
         assertEquals(Desired, Result);
-        // Will Give a Fail if Desured does not Equal Result
+        // Will Give a Fail if Desired does not Equal Result
     }
 }
