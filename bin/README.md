@@ -20,6 +20,9 @@ Once all numbers have been inserted, the tree is walked in-order, left subtree f
 
 ![TreesortGraphExample](docs/0.png)
 
+Using what a TreeSort does, it'll start from 1, then go to 2, then will read 3, then up to 4, then right to 5.\
+Therefore, sorting this into [1,2,3,4,5].
+
 ## How To Use:
 
 Once you download this entire repository as a .zip file (Or download the source code zip from the release page), and, using something like VSCode, Run Either MainUSERINPUT or just Main.

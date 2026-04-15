@@ -6,10 +6,11 @@ public class TreeSort {
     }
 
     // Sort Using Tree Sort
-    // This is just a way to apply TreeSort.sort([Array Here]) to whatever youre attempting to sort 
+    // This is just a way to apply TreeSort.sort([Array Here]) to whatever youre attempting to sort
     public static ArrayList<Integer> sort(ArrayList<Integer> x){
         
         // First Start At The Root
+        // The Root being at index 0 of the list "x"
         Node root = new Node(x.get(0));
 
         // Continuously add Numbers to the Root Node

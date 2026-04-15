@@ -11,9 +11,11 @@ public class MainUSERINPUT {
         ArrayList<Integer> List = new ArrayList<>();
 
     // Challenge for Array Length:
-    System.out.print("Amount of Numbers In List? ");
-    double n = UserInput.nextDouble(); // Yeah, might be counter productive allowing then forbidding non whole integers
+    System.out.print("Number Of Elements In List: ");
+    double n = UserInput.nextDouble(); // Yeah, might be counter productive allowing then forbidding non whole integers later on
                                        // However, it's solely to give the user the information on whats allowed as valid values.
+                                       // Obviously, it wont accept you inputting "Hello", but, it'd take a lot of effort, and im unsure if ArrayList<Integer> would even be valid to use in this case.
+                                       // So, expect an obvious error if you type a string into the List Size challenge.
 
     // Valid Array Checker:
         // Using a Modulo Operator
