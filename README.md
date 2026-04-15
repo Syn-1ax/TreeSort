@@ -55,6 +55,9 @@ I used JUNIT for this.
 
 ![TestOutputIMG](docs/3.png)
 
+![CheckBoxesIMG](docs/4.png) \
+(This is just another way of showing that the test succeeded)
+
 ### //// END OF TEST ////
 
 THERE IS NO %FAILED Present, the Sorted Given Array is the same as our Desired Array (Our unsorted, when sorted, is the same as our sorted known array) \
