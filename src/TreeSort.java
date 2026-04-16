@@ -63,7 +63,7 @@ public class TreeSort {
     // This is like applying TreeSort.sort([Array Here]) to whatever youre attempting to sort
     public static ArrayList<Integer> sort(ArrayList<Integer> x){
         Node root = new Node(x.get(0));
-        // Continuously add Numbers to the Root Node but going in the desired order
+        // Continuously add Numbers to the Root Node but going in the desired order to sort in (Ascending)
         for(int i = 1; i < x.size(); i ++){
             root.add_item(x.get(i));
         }
