@@ -14,6 +14,11 @@ It does this through creating a binary tree, and establishing a Root Node (First
 
 Once all numbers have been inserted, the tree is walked in-order, left subtree first, then the current node, then the right subtree. Leaving us with, once it walks through the list (going through the tree), starting with the Left Side, and them going to the Right, we get our list back in ascending order.
 
+## Heads Up:
+
+I was going to keep the TreeSort and Nodes seperate after moving them from the combined script, however, it works a lot better after changing it, and has become a lot cleaner in terms of looks now, so i've gone back to using it, whilst also providing the seperated Node and TreeSort files.
+
+Also prevents me from repeating the import of java.util.ArrayList, making it even less complicated.
 
 
 ## A Diagram (Provided By Dr Thomas Bending)
