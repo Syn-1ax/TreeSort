@@ -43,8 +43,9 @@ public class TreeSort {
     public ArrayList<Integer> walk(){
         ArrayList<Integer> list = new ArrayList<>();
         TreeWalk(list);
-        return list;
+        return list; // Returns an entire list, but sorted
     }
+    // No calling this part outside of this file.
     private void TreeWalk(ArrayList<Integer> list){
         // Go Left
         if(Left != null){
