@@ -1,9 +1,8 @@
-// In my project, i also have seperated the code to make it clearer
-// Upon Second Look, this version is a lot better (i had to clean it up a lot and recomment parts due to it being incompatible with my previous version).
 // If you really want to use the seperated one's (For analysis or usage reasons), replace it with the ZipFIle one, AND also add the Node.java.
-// They work the exact same, but since it's one file, it should be easier to use (its not a large script anyway)
+// They work the exact same, but since this is one file, it should be easier to use (its not a large script anyway)
 
-
+// This Is the Main TreeSorting Thing.
+// Returns the list in Ascending Order.
 import java.util.ArrayList;
 
 public class TreeSort {
@@ -63,6 +62,12 @@ public class TreeSort {
     // The Sorter
     // This is like applying TreeSort.sort([Array Here]) to whatever youre attempting to sort
     public static ArrayList<Integer> sort(ArrayList<Integer> x){
+
+        // MAKING SURE ITS NOT A ZERO LENGTH LIST FIRST.
+        if(x.isEmpty()){
+            System.out.println("Empty/Zero-Length List Detected.");
+            return new ArrayList<>(); // Will spit out a sorted unsorted thats literally nothing
+        }
         Node root = new Node(x.get(0));
         // Continuously add Numbers to the Root Node but going in the desired order to sort in (Ascending)
         for(int i = 1; i < x.size(); i ++){
@@ -70,10 +75,6 @@ public class TreeSort {
         }
 
         // Walk and return the tree list, but now sorted.
-        // This part doesnt have a 0 notify case, however, this is sorted in the MainUSERINPUT file, and also because you cant sort a Zero List, it shouldnt do much but cause an error and close
         return root.walk();
     }
-
-    // Must Have or it refuses to work
-    public static void main(String[] args){}
 }
